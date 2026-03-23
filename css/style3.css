@@ -1,0 +1,387 @@
+/* h2{
+   position: relative;
+   font-family : "Ancial-Regular";
+   color : rgb(138, 4, 71);
+   top: auto;
+   font-size : 60vw;
+   
+} */
+
+
+/*
+ .titreViolet{
+   color : purple;
+    font-size: 25px
+}  
+
+
+*/
+main{
+   display : none;
+   
+} 
+
+
+
+
+                                                            h3{
+                                                               width: 200px;
+                                                               height: 200px;
+                                                               
+                                                               background-color: rgba(143, 86, 0, 0.116);
+                                                               mix-blend-mode:lighten;
+                                                               filter:blur(10px);
+                                                               
+                                                               position: fixed;
+                                                               top: 60px;
+                                                               left: 400px;
+                                                               z-index: -20;
+                                                               
+                                                               
+                                                               animation: deplacement2 18s infinite reverse ease-in-out;
+                                                              
+                                                               
+                                                            
+                                                            }
+
+                                                             h2{
+                                                               margin-left: 0px;
+                                                               width: 300px;
+                                                               height: 300px;
+                                                               
+                                                               background-color: rgba(36, 121, 10, 0.185);
+                                                               mix-blend-mode:lighten;
+                                                               filter:blur(15px);
+                                                               
+                                                               position: fixed;
+                                                               top: 150px;
+                                                               left: 0px;
+                                                               z-index: -20;
+                                                               
+                                                               
+                                                               animation: deplacement1 15s infinite ease-in-out;
+                                                               
+                                                               
+                                                            
+                                                            }
+@keyframes deplacement2 {
+   0% {
+      margin-top: -300px;
+   }
+   
+   100% {
+      margin-top: 120%;
+   }
+}
+
+
+@keyframes deplacement1 {
+   0% {
+      margin-left: -300px;
+   }
+   
+   100% {
+      margin-left: 120%;
+   }
+}
+
+
+
+h1{
+   filter:blur(1px);
+   opacity: 0.2;
+   position:fixed; 
+   width: 60px;
+   bottom:15px;
+   height: auto; 
+   left: 40%;
+   z-index: 9998;
+} 
+
+h6{
+   filter:blur(1px);
+   opacity: 0.2;
+   position:fixed; 
+   width: 60px;
+   bottom:15px;
+   height: auto; 
+   left: 50%;
+   z-index: 9998;
+}
+
+h7{
+   position:fixed; 
+   width: 30px;
+   bottom:30px;
+   height: auto; 
+   left: 60%;
+   z-index: 9998;
+   animation: brille 1s infinite ease-in-out;
+}
+
+@keyframes brille{
+   0% {
+         opacity:0.5;
+        filter:blur(0);
+        
+    }
+    50% {
+        opacity:1;
+        filter:blur(3px);
+        
+        
+        
+        
+    }
+    100% {
+        opacity:0.5;
+        filter:blur(0);
+        
+    }
+
+}
+
+header{
+   background-color: rgba(18, 33, 7, 0.447);
+   position: fixed;
+   height: 90px;
+   width: 100%;
+   bottom: 0px;
+   z-index: 9999;
+}
+
+
+@keyframes balance {
+    0% {
+        transform: rotate(-50deg);
+        
+    }
+    50% {
+        transform: rotate(50deg);
+        opacity: 0.5
+        
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+}
+
+
+
+img{
+   width : relative;
+    
+}
+
+.grand{
+   margin-left: 200px;
+   margin-top:100px ;
+   
+   font-size : 200px;
+   font-family : "Minecraft";
+   cursor: url(../curseur.png), pointer;
+  animation: couleur1 20s infinite ease-in-out; ;
+}
+
+.moyen{
+   
+   margin-top:100px;
+   font-size : 20px;
+   font-family : "Minecraft";
+   cursor: url(../curseur.png), pointer;
+  
+   animation: couleur2 10s infinite ease-in-out; ;
+}
+@keyframes couleur1 {
+   0% {
+      background-color : rgba(117, 13, 13, 0.267);
+   }
+   25% {
+      background-color : rgba(219, 171, 13, 0);  
+   }
+   50% {
+      background-color : rgba(95, 83, 14, 0.342);  
+   }
+   100% {
+       background-color : rgba(117, 13, 13, 0.267);
+   }
+}
+.grand, .moyen
+{
+   mix-blend-mode:exclusion;
+}
+
+
+@keyframes couleur2 {
+   0% {
+      background-color : rgba(42, 117, 13, 0.178);
+   }
+   50% {
+      background-color : rgba(14, 15, 95, 0.205);  
+   }
+   100% {
+       background-color : rgba(42, 117, 13, 0.178);
+   }
+}
+.grand:hover, .moyen:hover{
+   
+   animation: seclairer 1s;
+
+}
+
+@keyframes seclairer {
+   0% {color: rgba(165, 42, 42, 0);
+
+      
+   }
+   50% {
+       color: rgba(51, 170, 36, 0.308);
+       
+   }
+   100% {color: rgba(165, 42, 42, 0);
+      
+   }
+}
+
+.rouge{
+   mix-blend-mode: hue;  
+}
+
+.bleu{  
+   mix-blend-mode:difference;
+}
+
+/* @keyframes couleur2 {
+   0% {
+      color : rgb(148, 24, 24);
+   }
+   50% {
+      color : rgb(219, 171, 13);  
+   }
+   100% {
+      color : rgb(216, 57, 29);
+   }
+
+} */
+
+/* @keyframes couleur1 {
+   0% {
+      color : rgb(220, 17, 17);
+   }
+   25% {
+      color : rgb(235, 194, 11);
+   }
+   50% {
+      color : rgb(71, 167, 11);  
+   }
+   75% {
+      color : rgb(24, 182, 255);
+   }
+   100% {
+      color : rgba(174, 35, 255, 0.698);
+   }
+} */
+/* .rotation1{
+   transform: rotate(10deg);
+} 
+.rotation2{
+   transform: rotate(-10deg);
+}
+.rotation3{
+   transform: rotate(20deg);
+} */
+
+@font-face {
+   font-family: "Minecraft";
+   src: url("../Minecraft.ttf");
+}
+@font-face {
+   font-family: "Tequila";
+   src: url("../TEQUILA_.TTF");
+}
+@font-face {
+   font-family: "RawNotice";
+   src: url("../RawNotice.ttf");
+}
+@font-face {
+   font-family: "RIOT!";
+   src: url("../RIOTfont1.ttf");
+}
+
+@font-face {
+  font-family: "Nudles"; /*choix du mot clef */
+  src: url("../Nudles-Fat.woff2")  /*attention il faut bien ajouter '../' si besoin */
+}
+
+@font-face {
+   font-family: "FlorDeRuina";
+   src: url("../FlorDeRuina-Ruina.woff2")
+}
+
+@font-face {
+   font-family: "kaerukaeru";
+   src: url("../kaerukaeru-Regular.woff2")
+}
+
+
+
+body {
+   cursor: url(../curseur.png), pointer;
+   /* cursor : url(../dauphin.png), pointer; */
+ 
+
+   animation: fond 10s infinite alternate ease-in-out;
+   background-color: rgb(9, 36, 8);
+   background-size: 2300px;
+   /* background-repeat: no-repeat; */
+   
+  ;
+  display: grid;
+  grid-template-columns: repeat(10,200px);
+  gap: 0px;
+  grid-auto-rows:100px;
+
+}
+@keyframes fond {
+  0% {
+    background-color: rgb(2, 19, 2);
+  }
+  50% {
+    background-color: rgb(4, 19, 13);
+  }
+  100% {
+    background-color: rgb(8, 20, 44);
+  }
+}
+
+p {
+   
+   margin-left:300px;
+   height : 200px;
+   width : 200px;
+   /* display : flex;
+   justify-content : center;
+   align-items : center;
+   position : absolute; */
+   top : 20px;
+   color : rgba(0, 0, 0, 0.368);
+
+   /*
+   animation-duration: 5s;
+   animation-iteration-count: 1; 
+   animation-direction:reverse;
+   animation-fill-mode: forwards;
+	animation-delay : 0s; */ 
+
+   overflow: hidden;
+
+}
+
+/* @keyframes couleur {
+   from {
+      background-color: rgb(97, 78, 56, 0.5);
+   }
+   to {
+      background-color: rgba(167, 131, 85, 0.5);
+   }
+} */
